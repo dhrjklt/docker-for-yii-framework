@@ -19,8 +19,6 @@ RUN a2enmod proxy
 RUN a2enmod proxy_http
 
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/server.key -out /etc/apache2/server.crt -subj "/C=AT/ST=India/L=Guwahati/O=Security/OU=Development/CN=example.com"
-RUN echo "date.timezone = 'Asia/Kolkata'" >> /usr/local/etc/php/php.ini-development
-RUN echo "date.timezone = 'Asia/Kolkata'" >> /usr/local/etc/php/php.ini-production
 
 COPY ./conf/vantagecircle.conf /etc/apache2/site-enable/
 COPY ./conf/vantagecircle.conf /etc/apache2/sites-enabled/
