@@ -1,10 +1,10 @@
-# Docker-yii
-Docker  for development in Yii2 framework 
+# Docker-yii framework
+Docker  for development in Yii framework 
 
 
-1. First clone the yii2 repo inside the folder.
+1. First clone the yii repo inside the folder.
 
-2. Create the runtime folder inside the yii2 repo. Give full privileges to assets and runtimefolder.
+2. Create the runtime folder inside the yii repo. Give full privileges to assets and runtimefolder.
 
     chmod 777 runtime and
     chmod 777 runtime
