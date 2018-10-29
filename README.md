@@ -18,7 +18,7 @@ Important commands:
 
 1. To check the container is running : sudo docker ps 
 
-2.  To kill the running container : sudo docker kill <CONTAINER ID>
+2.  To kill the running container : sudo docker kill CONTAINER_ID
 
 3. To run the same container CMD "docker-compose up" inside docker-yii folder. 
 
