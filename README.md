@@ -6,7 +6,7 @@ Docker  for development in Yii2 framework
 
 2. Create the runtime folder inside the yii2 repo. Give full privileges to assets and runtimefolder.
 
-    chmod 777 runtime
+    chmod 777 runtime and
     chmod 777 runtime
 
 3. Inside the docker-yii folder CMD "docker-compose build"
