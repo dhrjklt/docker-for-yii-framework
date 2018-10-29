@@ -21,3 +21,19 @@ Important commands:
 2.  To kill the running container : sudo docker kill <CONTAINER ID>
 
 3. To run the same container CMD "docker-compose up" inside docker-yii folder. 
+
+
+
+## Install docker and docker-compose in MAC 
+
+1. Follow the steps : https://docs.docker.com/docker-for-mac/install/
+
+## Install docker and docker-compose in Ubuntu
+
+1. https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
+
+2. https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04
+
+## Install docker and docker-compose in WINDOWS 
+
+1. https://docs.docker.com/v17.09/docker-for-windows/install/
