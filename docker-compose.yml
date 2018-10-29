@@ -1,0 +1,12 @@
+web:
+  build: .
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - ./vantagecircle-web/:/var/www/html/
+    - ./wordpress:/var/www/
+    - ./conf/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini
+  extra_hosts:
+    - "vantagecircle.local:127.0.0.1"
+    - "server-test:159.89.166.228"
