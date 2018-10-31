@@ -10,7 +10,7 @@ web:
   extra_hosts:
     - "vantagecircle.local:127.0.0.1"
     - "server-test:159.89.166.228"
-    - "wordpress.local:127.0.0.1"
+    - "mariadb:127.0.0.1"
   links:
     - mysql
 
