@@ -10,18 +10,16 @@ web:
   extra_hosts:
     - "vantagecircle.local:127.0.0.1"
     - "server-test:159.89.166.228"
-    - "mariadb:127.0.0.1"
   links:
     - mysql
 
 mysql:
     image: mariadb:10.3
-    container_name: mariadb
+    container_name: cms-db
     volumes:
-  #    - container-volume:/var/lib/mysql
       - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: name_db
+      MYSQL_DATABASE: cms
     ports:
-      - "3306:3306"
+      - "3316:3306"
