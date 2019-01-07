@@ -2,16 +2,22 @@
 Docker  for development in Yii framework 
 
 
-1. First clone the yii repo inside the folder.
+1. First clone the yii repo inside the folder and cms inside wordpress folder.
 
 2. Create the runtime folder inside the yii repo. Give full privileges to assets and runtimefolder.
 
     chmod 777 runtime and
-    chmod 777 runtime
+    chmod 777 assets
 
-3. Inside the docker-yii folder CMD "docker-compose build"
+3. Put the cms database dump inside the docker-yii folder and rename it as dump.sql.
+
+4. Inside the docker-yii folder CMD "docker-compose build"
 
 4. After completing the docker build do CMD "docker-compose up"
+
+### Connection to database inside docker 
+
+connction host : 127.0.0.1 , port : 3316 , database : cms , password : root , username : root
 
 
 Important commands: 
