@@ -13,8 +13,11 @@ RUN requirements="nano cron   libz-dev libmemcached-dev libmcrypt-dev libmemcach
     && docker-php-ext-install soap \
     && requirementsToRemove="libpng12-dev libmcrypt-dev libcurl3-dev libxml2-dev libpng12-dev libfreetype6-dev libjpeg62-turbo-dev" \
     && apt-get purge --auto-remove -y $requirementsToRemove \
-    && pecl install memcache && echo extension=memcache.so >> /usr/local/etc/php/conf.d/memcached.ini
-
+    && pecl install memcache && echo extension=memcache.so >> /usr/local/etc/php/conf.d/memcached.ini 
+RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash -
+RUN apt-get -y install nodejs
+RUN npm install
+RUN npm -g install sass
 RUN a2enmod rewrite
 RUN a2enmod ssl
 RUN a2enmod proxy
